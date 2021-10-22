@@ -1,8 +1,8 @@
 import { Card, CardContent, Typography } from "@mui/material";
-
-const InfoBox = ({ title, cases, total }) => {
+import "./InfoBox.css";
+const InfoBox = ({ title, cases, active, total, ...props }) => {
   return (
-    <Card className="infoBox">
+    <Card onClick={props.onClick} className="infoBox">
       <CardContent>
         {/* title */}
         <Typography className="infoBox__title" color="textSecondary">
@@ -12,7 +12,7 @@ const InfoBox = ({ title, cases, total }) => {
         <h2 className="infoBox__cases">{cases}</h2>
         {/* total */}
         <Typography className="infoBox__total" color="textSecondary">
-          {total} total
+          {total} Total
         </Typography>
       </CardContent>
     </Card>
