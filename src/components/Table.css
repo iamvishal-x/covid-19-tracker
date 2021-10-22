@@ -1,0 +1,21 @@
+.table {
+  margin-top: 20px;
+  overflow: scroll;
+  height: 400px;
+  color: rgba(135, 84, 177, 0.867);
+  background-color: white;
+}
+.table::-webkit-scrollbar {
+  display: none;
+}
+.table tr:nth-of-type(even) {
+  background-color: rgb(185, 202, 190);
+  color: rgb(31, 65, 65);
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.table td {
+  padding: 0.4rem;
+}
